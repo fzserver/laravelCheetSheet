@@ -1,6 +1,12 @@
-// example of model
+    /*
+        These functions are defined by :: Abhijeet Kumar 14-12-2023 
+        To get the accomodation, accomodation category data and also here is defined to map the data from compitable with table.
+        here,
+        accom_category  = category or hotel_category :: this data is in accom_category table
+        compatible_with = sub_category or hotel_sub_category :: this data is in compatible with table and this is mapped using compatible_with id
+    */
 
-// for accommodation name
+    // for accommodation name
     public function getAccomName() {
         return $this->belongsTo(AccomModel::class, 'accom_id_fk', 'id');
     }
