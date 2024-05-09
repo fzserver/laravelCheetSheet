@@ -51,6 +51,11 @@
                   {!! Form::text("pincode", Auth::user()->pincode, ['class' => 'form-control','placeholder' => 'Enter your area pincode']) !!}
                   {!! $errors->first("pincode",'<span class="help-block text-danger">:message</span>') !!}
               </div>
+              <div class="col-md-6 mb-4">
+                    {{ html()->label("Marrital Status", "Marrital Status") }} <span class="text-danger">*</span>
+                    {{ html()->select('marrital_status', ['' => 'Select marrital status' , '0' => 'Single', '1' => 'Married', '2' => 'Un-Married', '3' => 'Divorced'])->class('form-select') }}
+                    <span class="help-block text-danger">{!! $errors->first('marrital_status', ':message') !!}</span>
+                </div>
           </div>
       {!! Form::submit("Place Order", ["class"=>"btn btn-outline-primary float-end"]) !!}
   {!! Form::close() !!}
