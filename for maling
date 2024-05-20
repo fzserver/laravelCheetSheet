@@ -1,0 +1,19 @@
+php artisan make: mail SendEmail
+
+
+GMAIL CONFIGURATION FOR TESTING PURPOSE
+
+1.) Secrity
+2.) App password
+3.) Define App NAme
+4.) COpy Paswd and paste on env mail pswd.
+
+
+# MAIL_DRIVER=smtp
+# MAIL_HOST=smtp.gmail.com
+# MAIL_PORT=587
+# MAIL_USERNAME=developer@gmail.com
+# MAIL_PASSWORD=Jrargp70
+# MAIL_ENCRYPTION=tls
+# MAIL_FROM_ADDRESS="test@example.com"
+# MAIL_FROM_NAME="${APP_NAME}"
