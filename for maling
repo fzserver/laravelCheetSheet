@@ -8,6 +8,7 @@ GMAIL CONFIGURATION FOR TESTING PURPOSE
 2.) App password
 3.) Define App NAme
 4.) COpy Paswd and paste on env mail pswd.
+Note: It'll work only for two factor enabled.
 
 
 # MAIL_DRIVER=smtp
